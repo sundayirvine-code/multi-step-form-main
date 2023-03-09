@@ -1,0 +1,149 @@
+/*global tab styling*/
+.tab{
+    grid-area: 1/6/17/12;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(32, 11.2px);
+    column-gap: 10px;
+}
+
+/*personal info*/
+.tab, .prev{
+    display: none;
+}
+
+.tab1{
+    display: grid;
+}
+
+.person-header{
+    grid-area: 4/1/6/4;
+    font-size: 30px;
+    font-weight: 700;
+    color: #082b59;
+}
+
+.person-text{
+    grid-area: 7/1/8/4;
+    font-size: 13px;
+    color: #b8b9bc;
+}
+
+.tab1 label{
+    font-size: 14px;
+    color: #082b59;
+}
+.tab1 input{
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #dedde1;
+}
+
+.name{
+    grid-area: 13/1/14/4;
+}
+
+#name{
+    grid-area: 15/1/18/4;
+}
+
+.email{
+    grid-area: 19/1/20/4;
+}
+
+#email{
+    grid-area: 21/1/24/4;
+}
+
+.phone{
+    grid-area: 25/1/26/4;
+}
+
+#phone{
+    grid-area: 27/1/30/4;
+}
+
+/*tab 2 styling*/
+.plan{
+    border: 1px solid #dcdbe0;
+    grid-row: 11/26;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 5fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.swap{
+    border: 1px solid;
+    grid-row: 28/31;
+    grid-column: 1/4;
+    border-radius: 5px;
+    background-color: #f8f9fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch{
+    width:40px;
+    height: 20px;
+    border-radius: 35px;
+    background-color: #032a5b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: justify-content 0.3s ease;
+    padding: 0 2px;
+    margin: 0 8px;
+}
+
+.switch.active {
+  justify-content: end;
+}
+.styleup{
+    color: #032a5b;
+    font-weight: 300;
+}
+.switch-btn{
+    width: 16px;
+    height: 16px;
+    background-color: #fffef9;
+    border-radius: 50%;
+}
+
+.yearly, .monthly{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.arcade{
+    border-color: #5d579c;
+    background-color: #f8f9fe;
+}
+
+.arcade-name{
+    align-self: end;
+    color: #082b59;
+    font-weight: 500;
+}
+
+.price{
+    font-size: 13px;
+    color: #b4b4be;
+}
+
+.icon{
+    width: 50px;
+}
+
+.free{
+    display: none;
+    color: #082b59;
+    font-size: 13px;
+    transition: justify-content 0.3s ease;
+}
+
+.display{
+    display: block; 
+}

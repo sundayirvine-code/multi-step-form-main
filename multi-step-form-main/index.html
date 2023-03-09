@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/tabs.css">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body> 
+<div class="container">
+  <div id="container2">
+    <form id="form" action="#" method="post">
+
+      <!--side bar-->
+      <div class="side-bar">
+        <div class="step1 step">1</div>
+        <div class="step2 step">2</div>
+        <div class="step3 step">3</div>
+        <div class="step4 step">4</div>
+        <h3 class="h31">YOUR INFO</h3>
+        <p class="p1">STEP 1</p>
+        <h3 class="h32">SELECT PLAN</h3>
+        <p class="p2">STEP 2</p>
+        <h3 class="h33">ADD-ONS</h3>
+        <p class="p3">STEP 3</p>
+        <h3 class="h34">SUMMARY</h3>
+        <p class="p4">STEP 4</p>
+      </div>
+      
+      <!--Tabs-->
+      <div class="tab tab1">
+        <p class="person-header">Personal info</p>
+        <p class="person-text">Please provide your name, email address, and phone number.</p>
+
+        <label for="name" class="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="e.g. Stephen King" required>
+
+        <label for="email" class="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" required>
+
+        <label for="phone" class="phone">Phone Number</label>
+        <input type="number" name="phone" id="phone" required placeholder="e.g. +1 234 567 890">
+        
+      </div>
+
+      <div class="tab tab2">
+        <p class="person-header">Select your plan</p>
+        <p class="person-text">You have the option of monthly or yearly billing.</p>
+        <div class="arcade plan">
+          <img class="icon" src="/multi-step-form-main/assets/images/icon-arcade.svg" alt="arcade icon">
+          <div class="arcade-name">Arcade</div>
+          <div class="price arcade_price">$9/mo</div>
+          <div class="free">2 months free</div>
+        </div>
+        <div class="advanced plan">
+          <img class="icon" src="/multi-step-form-main/assets/images/icon-advanced.svg" alt="arcade icon">
+          <div class="arcade-name">Advanced</div>
+          <div class="price advanced_price">$12/mo</div>
+          <div class="free">2 months free</div>
+        </div>
+        <div class="pro plan">
+          <img class="icon" src="/multi-step-form-main/assets/images/icon-pro.svg" alt="arcade icon">
+          <div class="arcade-name">Pro</div>
+          <div class="price pro_price">$15/mo</div>
+          <div class="free">2 months free</div>
+        </div>
+        <div class="swap">
+          <span class="monthly styleup">Monthly</span>
+          <span class="switch">
+            <span class="switch-btn"></span>
+          </span>
+          <span class="yearly">Yearly</span>
+          <script src="/script/tabs.js"></script>
+        </div>
+      </div>
+
+      <div class="tab tab3"></div>
+      <div class="tab tab4"></div>
+      <div class="tab tab5"></div>
+
+      <!--buttons--> 
+      <button class="btn prev">Go Back</button>
+      <button class="btn next">Next Step</button>
+    </form>
+    <form ></form>
+  </div>
+</div>
+<script src="/script/steps.js"></script>
+</body>
+</html>
