@@ -120,11 +120,20 @@ p{
 
 .prev{
     grid-area: 19/6/21/8;
+    background-color:hsl(0, 0%, 100%);
+    color: #a3a3aa;
+}
+
+.prev:hover{
+    color: #174a8b;
 }
 
 .btn{
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
 }
 .next{ 
     grid-area: 19/10/21/12;

@@ -34,13 +34,13 @@
         <p class="person-header">Personal info</p>
         <p class="person-text">Please provide your name, email address, and phone number.</p>
 
-        <label for="name" class="name">Name</label>
+        <label for="name" class="name">Name</label> <span class="error name-error">This is required</span>
         <input type="text" name="name" id="name" placeholder="e.g. Stephen King" required>
 
-        <label for="email" class="email">Email Address</label>
+        <label for="email" class="email">Email Address</label><span class="error mail-error">This is required</span>
         <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" required>
 
-        <label for="phone" class="phone">Phone Number</label>
+        <label for="phone" class="phone">Phone Number</label><span class="error phone-error">This is required</span>
         <input type="number" name="phone" id="phone" required placeholder="e.g. +1 234 567 890">
         
       </div>
@@ -72,11 +72,38 @@
             <span class="switch-btn"></span>
           </span>
           <span class="yearly">Yearly</span>
-          <script src="/script/tabs.js"></script>
+          <script src="/script/tabs.js" type="module"></script>
         </div>
       </div>
 
-      <div class="tab tab3"></div>
+      <div class="tab tab3">
+        <p class="person-header">Pick add-ons</p>
+        <p class="person-text">Add-ons help enhance your gaming experience.</p>
+        <div class="add-ons add1">
+          <input type="checkbox" name="online" class="add-check">
+          <div class="add-servive">
+            <div class="add-s-header">Online service</div>
+            <div class="add-s-text">Access to multiplayer games</div>
+          </div>
+          <div class="add-price online_price">+$1/mo</div>
+        </div>
+        <div class="add-ons add2">
+          <input type="checkbox" name="online" class="add-check">
+          <div class="add-servive">
+            <div class="add-s-header">Larger storage</div>
+            <div class="add-s-text">Extra 1TB of cloud save</div>
+          </div>
+          <div class="add-price storage_price">+$2/mo</div>
+        </div>
+        <div class="add-ons add3">
+          <input type="checkbox" name="online" class="add-check">
+          <div class="add-servive">
+            <div class="add-s-header">Customizable Profile</div>
+            <div class="add-s-text">Custom theme on your profile</div>
+          </div>
+          <div class="add-price custom_price">+$2/mo</div>
+        </div>
+      </div>
       <div class="tab tab4"></div>
       <div class="tab tab5"></div>
 
@@ -87,6 +114,6 @@
     <form ></form>
   </div>
 </div>
-<script src="/script/steps.js"></script>
+<script src="/script/steps.js" type="module"></script>
 </body>
 </html>

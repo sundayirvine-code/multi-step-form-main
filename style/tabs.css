@@ -24,7 +24,7 @@
 }
 
 .person-text{
-    grid-area: 7/1/8/4;
+    grid-area: 8/1/9/4;
     font-size: 13px;
     color: #b8b9bc;
 }
@@ -37,10 +37,25 @@
     padding-left: 10px;
     border-radius: 5px;
     border: 1px solid #dedde1;
+    cursor: pointer;
+}
+
+#name:hover, #email:hover, #phone:hover{
+    border-color: #655cc5;
+}
+
+.error{
+    font-size: 14px;
+    justify-self: end;
+    color: #d84357;
 }
 
 .name{
-    grid-area: 13/1/14/4;
+    grid-area: 13/1/14/2;
+}
+
+.name-error{
+    grid-area: 13/2/14/4;
 }
 
 #name{
@@ -48,7 +63,11 @@
 }
 
 .email{
-    grid-area: 19/1/20/4;
+    grid-area: 19/1/20/2;
+}
+
+.mail-error{
+    grid-area: 19/2/20/4;
 }
 
 #email{
@@ -56,7 +75,11 @@
 }
 
 .phone{
-    grid-area: 25/1/26/4;
+    grid-area: 25/1/26/2;
+}
+
+.phone-error{
+    grid-area: 25/2/26/4;
 }
 
 #phone{
@@ -117,7 +140,10 @@
     font-weight: 300;
 }
 
-.arcade{
+
+
+.plan:hover{
+    cursor: pointer;
     border-color: #5d579c;
     background-color: #f8f9fe;
 }
@@ -146,4 +172,59 @@
 
 .display{
     display: block; 
+}
+
+/*tab 3 styling*/
+.add-ons{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.2fr;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.add-ons:hover{
+    border-color: #655cc5;
+    cursor: pointer;
+}
+
+
+.add1{
+    grid-area: 13/1/19/4;
+}
+
+.add2{
+    grid-area: 20/1/26/4;
+}
+
+.add3{
+    grid-area: 27/1/33/4;
+}
+
+.add-check{
+    width: 20px;
+    height: 20px;
+    justify-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checked{
+    border-color: #655cc5;
+    background-color: #f8f9fe;
+}
+
+.add-price{
+    color:  #655cc5;
+}
+
+.add-s-header{
+    font-size: 19px;
+    font-weight: 500;
+    color: #01193e;
+}
+
+.add-s-text{
+    font-size: 14px;
+    color: #b0b0b8;
 }
