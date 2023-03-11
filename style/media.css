@@ -20,8 +20,8 @@
         background-image: url(/assets/images/bg-sidebar-mobile.svg);
         padding: 0;
         display: grid;
-        grid-template-columns: 1fr 37px 37px 37px 37px 1fr;
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: 1fr 40px 40px 40px 40px 1fr;
+        grid-template-rows: 1fr 40px 40px 40px 40px 1fr 1fr;
         border-radius: 0;
         gap: 0;
         height: 100%;
