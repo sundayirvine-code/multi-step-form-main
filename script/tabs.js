@@ -54,3 +54,43 @@ checkboxes.forEach(function(checkbox) {
     }
   });
 });
+
+// Get references to the necessary elements
+const storageCheckbox = document.querySelector('.storage-check');
+const onlineCheckbox = document.querySelector('.online-check');
+const profileCheckbox = document.querySelector('.profile-check');
+const storageDiv = document.querySelector('.total-storage');
+const onlineDiv = document.querySelector('.total-online');
+const profileDiv = document.querySelector('.total-profile');
+
+storageDiv.style.display = 'none';
+onlineDiv.style.display = 'none';
+profileDiv.style.display = 'none';
+
+// Listen for changes to the checkboxes
+storageCheckbox.addEventListener('change', () => {
+  // If the checkbox is checked, show the storageDiv, otherwise hide it
+  if (storageCheckbox.checked) {
+    storageDiv.style.display = 'flex';
+  } else {
+    storageDiv.style.display = 'none';
+  }
+});
+
+onlineCheckbox.addEventListener('change', () => {
+  // If the checkbox is checked, show the onlineDiv, otherwise hide it
+  if (onlineCheckbox.checked) {
+    onlineDiv.style.display = 'flex';
+  } else {
+    onlineDiv.style.display = 'none';
+  }
+});
+
+profileCheckbox.addEventListener('change', () => {
+  // If the checkbox is checked, show the profileDiv, otherwise hide it
+  if (profileCheckbox.checked) {
+    profileDiv.style.display = 'flex';
+  } else {
+    profileDiv.style.display = 'none';
+  }
+});

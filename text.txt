@@ -105,3 +105,5 @@
     <div class="tab tab3"></div>
     <div class="tab tab4"></div>
     <div class="tab tab5"></div>
+
+    price = parseInt(price.replace('$', ''));

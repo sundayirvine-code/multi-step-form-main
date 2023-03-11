@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/tabs.css">
+  <link rel="stylesheet" href="style/media.css">
   <title>Frontend Mentor | Multi-step form</title>
 </head>
 <body> 
@@ -80,7 +81,7 @@
         <p class="person-header">Pick add-ons</p>
         <p class="person-text">Add-ons help enhance your gaming experience.</p>
         <div class="add-ons add1">
-          <input type="checkbox" name="online" class="add-check">
+          <input type="checkbox" name="online" class="add-check online-check">
           <div class="add-servive">
             <div class="add-s-header">Online service</div>
             <div class="add-s-text">Access to multiplayer games</div>
@@ -88,7 +89,7 @@
           <div class="add-price online_price">+$1/mo</div>
         </div>
         <div class="add-ons add2">
-          <input type="checkbox" name="online" class="add-check">
+          <input type="checkbox" name="storage" class="add-check storage-check">
           <div class="add-servive">
             <div class="add-s-header">Larger storage</div>
             <div class="add-s-text">Extra 1TB of cloud save</div>
@@ -96,7 +97,7 @@
           <div class="add-price storage_price">+$2/mo</div>
         </div>
         <div class="add-ons add3">
-          <input type="checkbox" name="online" class="add-check">
+          <input type="checkbox" name="profile" class="add-check profile-check">
           <div class="add-servive">
             <div class="add-s-header">Customizable Profile</div>
             <div class="add-s-text">Custom theme on your profile</div>
@@ -104,8 +105,43 @@
           <div class="add-price custom_price">+$2/mo</div>
         </div>
       </div>
-      <div class="tab tab4"></div>
-      <div class="tab tab5"></div>
+
+      <div class="tab tab4">
+        <hr>
+        <p class="person-header">Finishing up</p>
+        <p class="person-text">Double-check everything looks OK before confirming.</p>
+        <div class="bg"></div>
+        <div class="total-arcade">
+          <div class="t-arcade-side">
+            <div class="arc-header"></div>
+            <div class="arc-link">Change</div>
+          </div>
+          <div class="arch-price"></div> 
+        </div>
+        <div class="total-online t">
+          <div class="total-text">Online Service</div>
+          <div class="total-price op"></div>
+        </div>
+        <div class="total-storage t">
+          <div class="total-text">Large Storage</div>
+          <div class="total-price sp"></div>
+        </div>
+        <div class="total-profile t">
+          <div class="total-text">Customizable Profile</div>
+          <div class="total-price pp"></div>
+        </div>
+        <div class="total t">
+          <div class="total-text tt"></div>
+          <div class="total-price t-price"></div>
+        </div>
+      </div>
+      <div class="tab tab5">
+        <div class="tab5-img"></div>
+        <div class="tab5-header">Thank you!</div>
+        <div class="tab5-text">Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.</div>
+      </div>
 
       <!--buttons--> 
       <button class="btn prev">Go Back</button>
