@@ -20,7 +20,7 @@
         background-image: url(/assets/images/bg-sidebar-mobile.svg);
         padding: 0;
         display: grid;
-        grid-template-columns: 1fr 40px 40px 40px 40px 1fr;
+        grid-template-columns: 1fr 37px 37px 37px 37px 1fr;
         grid-template-rows: repeat(7, 1fr);
         border-radius: 0;
         gap: 0;
@@ -84,7 +84,7 @@
     }
 
     .email {
-        grid-area: 14/1/15/2;
+        grid-area: 14/1/15/3;
     }
 
     .mail-error {
@@ -96,7 +96,7 @@
     }
 
     .phone {
-        grid-area: 19/1/20/2;
+        grid-area: 19/1/20/3;
     }
 
     .phone-error {
@@ -197,6 +197,15 @@
         grid-template-columns: 1fr;
         grid-template-rows: 4fr 1fr 4fr;
         justify-items: center;
+    }
+
+    .next {
+        grid-area: 19/9/20/12;
+    }
+
+    .prev {
+        grid-area: 19/3/20/6;
+        background-color: transparent;
     }
 
 }
